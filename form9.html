@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Survey</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+    section {
+      margin: 10rem auto;
+      max-width: 51rem;
+      border: 1px solid black;
+      padding: 2rem;
+    }
+    .forminnerdiv {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+    .forminnerdivcheck {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      gap: 0.5rem;
+    }
+    label {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    .selectp {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 2rem 0;
+    }
+    .h3ms {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    .selectwhere {
+      width: 15rem;
+      margin-bottom: 1rem;
+    }
+    .musicroletextarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+    button {
+      font-size: 1.5rem;
+      padding: 0.3rem 0.8rem;
+      margin-right: 1rem;
+    }
+  </style>
+  <body>
+    <section>
+      <h3 class="h3ms">Music Survey</h3>
+      <form action="">
+        <div class="forminnerdiv">
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="forminnerdiv">
+          <label for="email">E-mail:</label> <input type="text" id="email" />
+        </div>
+        <p class="selectp">Select your favorite types of music</p>
+        <div class="forminnerdivcheck">
+          <input type="checkbox" id="pop" name="pop" value="Bike" />
+          <label for="pop">Pop</label>
+        </div>
+        <div class="forminnerdivcheck">
+          <input type="checkbox" id="classical" name="classical" value="Car" />
+          <label for="classical">Classical</label>
+        </div>
+        <div class="forminnerdivcheck">
+          <input type="checkbox" id="rock" name="rock" value="Boat" />
+          <label for="rock">Rock</label>
+        </div>
+        <div class="forminnerdivcheck">
+          <input type="checkbox" id="folk" name="folk" value="Boat" />
+          <label for="folk">Folk</label>
+        </div>
+        <div class="forminnerdivcheck">
+          <input type="checkbox" id="rap" name="rap" value="Boat" />
+          <label for="rap">Rap</label>
+        </div>
+        <div class="forminnerdivcheck">
+          <input type="checkbox" id="other" name="other" value="Boat" />
+          <label for="other">Other</label>
+        </div>
+        <p class="selectp">Select how often you purchase music cds</p>
+        <div class="forminnerdivcheck">
+          <input type="radio" id="weekly" name="drone" value="weekly" />
+          <label for="weekly">Weekly</label>
+        </div>
+        <div class="forminnerdivcheck">
+          <input type="radio" id="few" name="drone" value="few" />
+          <label for="few">A few CDs each year</label>
+        </div>
+        <div class="forminnerdivcheck">
+          <input type="radio" id="monthly" name="drone" value="monthly" />
+          <label for="monthly">Monthly</label>
+        </div>
+        <div class="forminnerdivcheck">
+          <input type="radio" id="never" name="drone" value="never" />
+          <label for="never">Never purchase</label>
+        </div>
+        <p class="selectp">Select the locations you listen to music</p>
+        <select name="wheredoyoulistentoyourmusic" size="3" class="selectwhere">
+          <optgroup>
+            <option value="athome">At home</option>
+            <option value="inthecar">In the car</option>
+            <option value="anywhere">Anywhere (MP3 player)</option>
+          </optgroup>
+        </select>
+        <p class="selectp">What role does music play in your life?</p>
+        <textarea
+          name="answerroleofmusic"
+          id=""
+          cols="30"
+          rows="4"
+          class="musicroletextarea"
+        ></textarea>
+        <button>Submit</button>
+        <button>Reset</button>
+      </form>
+    </section>
+  </body>
+</html>
